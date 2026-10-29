@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atharva Vilas Shelke — Java Backend Developer</title>
+  <meta name="description" content="Portfolio of Atharva Vilas Shelke, a Java Backend Developer in Thane, Maharashtra. A REST API–themed portfolio with document and response views.">
+  <meta name="theme-color" content="#FAFAF8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0E0F11" media="(prefers-color-scheme: dark)">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Atharva Vilas Shelke — Java Backend Developer">
+  <meta property="og:description" content="Java Backend Developer in Thane, Maharashtra. Portfolio presented as a small REST API, with document and response views.">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/data.js" defer></script>
+  <script src="js/highlight.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#profile" aria-label="Atharva Shelke — profile">
+        <span class="brand-mark" aria-hidden="true">AS</span>
+        <span class="brand-word">atharva-shelke</span>
+      </a>
+
+      <nav class="site-nav" aria-label="API endpoints">
+        <a href="#profile" data-route="profile"><span class="method">GET</span> /profile</a>
+        <a href="#projects" data-route="projects"><span class="method">GET</span> /projects</a>
+        <a href="#skills" data-route="skills"><span class="method">GET</span> /skills</a>
+        <a href="#contact" data-route="contact"><span class="method">POST</span> /contact</a>
+      </nav>
+
+      <div class="header-controls">
+        <div class="view-toggle" role="group" aria-label="View">
+          <button type="button" data-view="document" aria-pressed="true">Document</button>
+          <button type="button" data-view="response" aria-pressed="false">Response</button>
+        </div>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark theme">Dark</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="view view--document" id="document-view"></div>
+    <div class="view view--response" id="response-view" hidden></div>
+  </main>
+
+  <noscript>
+    <p class="view">This portfolio uses JavaScript for routing. The content is stored in <code>js/data.js</code>.</p>
+  </noscript>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 Atharva Vilas Shelke</p>
+      <p class="footer-hint">Press <kbd>r</kbd> to toggle the API response</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 Not Found — Atharva Vilas Shelke</title>
+  <meta name="description" content="The requested endpoint does not exist. Try GET /profile.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#FAFAF8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0E0F11" media="(prefers-color-scheme: dark)">
+
+  <style>
+    body { margin: 0; background: #FAFAF8; color: #111111; font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem; }
+    pre { overflow-x: auto; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0E0F11; color: #EDEDED; }
+    }
+  </style>
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/highlight.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./index.html" aria-label="Atharva Shelke — profile">
+        <span class="brand-mark" aria-hidden="true">AS</span>
+        <span class="brand-word">atharva-shelke</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main" class="view" tabindex="-1">
+    <p class="route-label">GET /404</p>
+    <h1>404 — Not Found</h1>
+    <div class="response">
+      <div class="response-bar">
+        <p class="response-title">HTTP response</p>
+      </div>
+      <pre class="code-panel response-panel"><code><span class="http-status is-error">HTTP/1.1 404 Not Found</span>
+Content-Type: application/json
+X-Powered-By: Java 17
+
+<span id="not-found-json">{
+  "error": "Not Found",
+  "message": "This endpoint does not exist.",
+  "hint": "Try GET /profile"
+}</span></code></pre>
+    </div>
+    <p class="section-intro" style="margin-top:1.75rem"><a href="./index.html">Return to GET /profile</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 Atharva Vilas Shelke</p>
+      <p><a href="./index.html">GET /profile</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var json = document.getElementById('not-found-json');
+      if (json && window.highlightJSON) {
+        json.innerHTML = window.highlightJSON(json.textContent);
+      }
+    });
+  </script>
+</body>
+</html>
